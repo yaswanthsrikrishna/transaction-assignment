@@ -1,0 +1,141 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.toucan.transaction:transaction-starter >-------------
+[INFO] Building transaction-starter 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ transaction-starter ---
+[INFO] Deleting C:\Users\HP\Downloads\transaction-assignment\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ transaction-starter ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ transaction-starter ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 15 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ transaction-starter ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Downloads\transaction-assignment\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ transaction-starter ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ transaction-starter ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.toucan.transaction.controller.TransactionControllerIntegrationTests
+10:08:16.242 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.toucan.transaction.controller.TransactionControllerIntegrationTests]: TransactionControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:08:16.637 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.toucan.transaction.TransactionStarterApplication for test class com.toucan.transaction.controller.TransactionControllerIntegrationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2026-08-31T10:08:17.770+05:30  INFO 39760 --- [           main] .c.TransactionControllerIntegrationTests : Starting TransactionControllerIntegrationTests using Java 24.0.1 with PID 39760 (started by HP in C:\Users\HP\Downloads\transaction-assignment)
+2026-08-31T10:08:17.774+05:30  INFO 39760 --- [           main] .c.TransactionControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2026-08-31T10:08:19.696+05:30  INFO 39760 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-31T10:08:19.838+05:30  INFO 39760 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2026-08-31T10:08:20.829+05:30  INFO 39760 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-31T10:08:21.357+05:30  INFO 39760 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:transactions user=SA
+2026-08-31T10:08:21.362+05:30  INFO 39760 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-31T10:08:21.632+05:30  INFO 39760 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-31T10:08:21.840+05:30  INFO 39760 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2026-08-31T10:08:21.950+05:30  INFO 39760 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-08-31T10:08:22.696+05:30  INFO 39760 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-31T10:08:22.876+05:30  INFO 39760 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-31T10:08:24.432+05:30  INFO 39760 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-31T10:08:24.507+05:30  INFO 39760 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-31T10:08:26.604+05:30  INFO 39760 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:transactions'
+2026-08-31T10:08:26.738+05:30  INFO 39760 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-08-31T10:08:26.740+05:30  INFO 39760 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-08-31T10:08:26.741+05:30  INFO 39760 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-08-31T10:08:26.797+05:30  INFO 39760 --- [           main] .c.TransactionControllerIntegrationTests : Started TransactionControllerIntegrationTests in 9.741 seconds (process running for 12.224)
+2026-08-31T10:08:28.042+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-duplicate, customerId=customer-10, amount=19.99 USD
+2026-08-31T10:08:28.933+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Transaction created successfully: id=tx-duplicate
+2026-08-31T10:08:29.046+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-duplicate, customerId=customer-11, amount=50.00 USD
+2026-08-31T10:08:29.049+05:30  WARN 39760 --- [           main] c.t.t.service.TransactionService         : Duplicate transaction ID attempted: tx-duplicate
+2026-08-31T10:08:29.273+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-102, customerId=customer-2, amount=19.99 USD
+2026-08-31T10:08:29.276+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Transaction created successfully: id=tx-102
+2026-08-31T10:08:29.297+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Status updated successfully: id=tx-102, from=PENDING, to=COMPLETED
+2026-08-31T10:08:29.326+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-105, customerId=customer-4, amount=10 USD
+2026-08-31T10:08:29.326+05:30  WARN 39760 --- [           main] c.t.t.service.TransactionService         : Invalid initial status for transaction tx-105: COMPLETED
+2026-08-31T10:08:29.362+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-107, customerId=customer-6, amount=19.99 USD
+2026-08-31T10:08:29.365+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Transaction created successfully: id=tx-107
+2026-08-31T10:08:29.371+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Status updated successfully: id=tx-107, from=PENDING, to=COMPLETED
+2026-08-31T10:08:29.905+05:30  INFO 39760 --- [           main] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 512 ms
+2026-08-31T10:08:29.952+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-106, customerId=customer-5, amount=19.99 USD
+2026-08-31T10:08:29.954+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Transaction created successfully: id=tx-106
+2026-08-31T10:08:29.960+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Status updated successfully: id=tx-106, from=PENDING, to=COMPLETED
+2026-08-31T10:08:29.967+05:30  WARN 39760 --- [           main] c.t.t.service.TransactionService         : Attempted status update on terminal state: id=tx-106, currentStatus=COMPLETED
+2026-08-31T10:08:29.982+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-101, customerId=customer-1, amount=19.99 USD
+2026-08-31T10:08:29.985+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Transaction created successfully: id=tx-101
+2026-08-31T10:08:30.064+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-103, customerId=customer-3, amount=19.99 USD
+2026-08-31T10:08:30.068+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Transaction created successfully: id=tx-103
+2026-08-31T10:08:30.074+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Creating new transaction: id=tx-104, customerId=customer-3, amount=19.99 USD
+2026-08-31T10:08:30.079+05:30  INFO 39760 --- [           main] c.t.t.service.TransactionService         : Transaction created successfully: id=tx-104
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.21 s -- in com.toucan.transaction.controller.TransactionControllerIntegrationTests
+[INFO] Running com.toucan.transaction.TransactionStarterApplicationTests
+2026-08-31T10:08:30.110+05:30  INFO 39760 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.toucan.transaction.TransactionStarterApplicationTests]: TransactionStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-31T10:08:30.135+05:30  INFO 39760 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.toucan.transaction.TransactionStarterApplication for test class com.toucan.transaction.TransactionStarterApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2026-08-31T10:08:30.226+05:30  INFO 39760 --- [           main] c.t.t.TransactionStarterApplicationTests : Starting TransactionStarterApplicationTests using Java 24.0.1 with PID 39760 (started by HP in C:\Users\HP\Downloads\transaction-assignment)
+2026-08-31T10:08:30.227+05:30  INFO 39760 --- [           main] c.t.t.TransactionStarterApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2026-08-31T10:08:30.588+05:30  INFO 39760 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-31T10:08:30.608+05:30  INFO 39760 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2026-08-31T10:08:30.778+05:30  INFO 39760 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-08-31T10:08:30.780+05:30  INFO 39760 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:transactions user=SA
+2026-08-31T10:08:30.780+05:30  INFO 39760 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-08-31T10:08:30.811+05:30  INFO 39760 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-31T10:08:30.815+05:30  INFO 39760 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-08-31T10:08:30.837+05:30  INFO 39760 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-31T10:08:30.840+05:30  INFO 39760 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-31T10:08:30.892+05:30  INFO 39760 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-31T10:08:30.894+05:30  INFO 39760 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-31T10:08:31.141+05:30  INFO 39760 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:transactions'
+2026-08-31T10:08:31.173+05:30  INFO 39760 --- [           main] c.t.t.TransactionStarterApplicationTests : Started TransactionStarterApplicationTests in 1.026 seconds (process running for 16.6)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.077 s -- in com.toucan.transaction.TransactionStarterApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.670 s
+[INFO] Finished at: 2026-08-31T10:08:31+05:30
+[INFO] ------------------------------------------------------------------------
